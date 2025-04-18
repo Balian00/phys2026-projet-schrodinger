@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 
 # === CONFIGURATION GÉNÉRALE ===
 unit = "eV"         # Unité d'énergie : "eV" ou "J"
-test_mode = False    # Mode test (rapide) ou haute précision
+test_mode = True    # Mode test (rapide) ou haute précision
 sectionA = 3         # Section A à exécuter
-sectionB = 0         # Section B à exécuter
+sectionB = 1         # Section B à exécuter
 sectionC = 0         # Section C à exécuter
 
 # === CONSTANTES PHYSIQUES ===
@@ -17,9 +17,9 @@ eV_to_J = e                     # Conversion 1 eV → J
 # === PARAMÈTRES DU POTENTIEL ===
 Q = 1                           # Charge source
 a = 0.01                        # Paramètre d'adoucissement
-L = 0.05                        # Distance entre charges
-N = 20                          # Nombre de charges
-voisinage = 1                   # Nombre de voisins considérés
+L = 0.05                        # Distance entre noyaux
+N = 20                          # Nombre de noyaux
+voisinage = 1                   # Nombre de voisins considérés : 1 dans l'énoncé
 
 # === GRILLE NUMÉRIQUE ===
 x_points = 400 if test_mode else 4000  # Nombre de points sur la grille
